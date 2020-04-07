@@ -1,0 +1,601 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/other_ll_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/other_btn_update_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="@string/txt_system_update"
+            android:textSize="@dimen/text_size_18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/other_btn_recovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="@string/txt_restore_system_setup"
+            android:textSize="@dimen/text_size_18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/other_btn_sync_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="@string/txt_sync_time"
+            android:textSize="@dimen/text_size_18sp" />
+
+        <Button
+            android:id="@+id/btn_sync_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="@string/txt_sync_data"
+            android:textSize="@dimen/text_size_18sp" />
+
+        <Button
+            android:id="@+id/other_btn_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="@string/txt_capture_photo"
+            android:textSize="@dimen/text_size_18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/other_btn_reboot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="@string/txt_reboot"
+            android:textSize="@dimen/text_size_18sp" />
+
+        <Button
+            android:id="@+id/other_btn_active_engine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="激活引擎"
+            android:textSize="@dimen/text_size_18sp" />
+
+        <Button
+            android:id="@+id/other_btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="@string/txt_verify"
+            android:textSize="@dimen/text_size_18sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_ll_function_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_ll_function">
+
+        <Button
+            android:id="@+id/btn_clear_system_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="清除系统日志"
+            android:textSize="@dimen/text_size_18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_clear_basic_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="清除基础数据"
+            android:textSize="@dimen/text_size_18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_clear_get_gun_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="清除领枪任务数据"
+            android:textSize="@dimen/text_size_18sp" />
+
+        <Button
+            android:id="@+id/btn_clear_urgent_task_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="应急处突数据"
+            android:textSize="@dimen/text_size_18sp" />
+
+        <Button
+            android:id="@+id/btn_clear_gun_status_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="清除枪支状态数据"
+            android:textSize="@dimen/text_size_18sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_ll_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_ll_function_2">
+
+        <TextView
+            android:id="@+id/other_tv_function_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/txt_function_switch"
+            android:textSize="@dimen/text_size_26sp" />
+
+        <CheckBox
+            android:id="@+id/other_cb_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:button="@drawable/select_cb_btn"
+            android:text="查询"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/other_cb_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:button="@drawable/select_cb_btn"
+            android:text="@string/txt_alarm"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/other_cb_alcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:button="@drawable/select_cb_btn"
+            android:text="@string/txt_alcohol"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/other_cb_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:button="@drawable/select_cb_btn"
+            android:text="@string/txt_capture"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/other_cb_humiture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:button="@drawable/select_cb_btn"
+            android:text="@string/txt_humiture"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_ll_humiture_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_ll_switch">
+
+        <TextView
+            android:id="@+id/other_tv_humiture_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="温湿度报警值设置"
+            android:textSize="@dimen/text_size_26sp"
+            />
+
+        <TextView
+            android:id="@+id/other_tv_temperature_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="温度值"/>
+
+        <EditText
+            android:id="@+id/other_edt_temprature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:background="@drawable/shape_edt_bg"
+            android:ems="3"
+            android:hint="温度值"/>
+
+        <TextView
+            android:id="@+id/other_tv_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="℃"/>
+
+        <TextView
+            android:id="@+id/other_tv_humidity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="湿度值"/>
+
+        <EditText
+            android:id="@+id/other_edt_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:background="@drawable/shape_edt_bg"
+            android:ems="3"
+            android:hint="湿度值"/>
+
+        <TextView
+            android:id="@+id/other_tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"/>
+
+        <Button
+            android:id="@+id/other_btn_set_humiture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/other_tv_verify_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="验证人数"
+        android:textSize="@dimen/text_size_26sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_ll_humiture_alarm" />
+
+    <RadioGroup
+        android:id="@+id/other_rg_verify_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_tv_verify_number">
+
+        <RadioButton
+            android:id="@+id/other_rb_one_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:button="@drawable/select_cb_blue03"
+            android:gravity="center"
+            android:text="一人"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/other_rb_two_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:button="@drawable/select_cb_blue03"
+            android:gravity="center"
+            android:text="二人"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/other_rb_three_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:button="@drawable/select_cb_blue03"
+            android:gravity="center"
+            android:text="三人"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/other_tv_first_verify_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="第一人验证设置"
+        android:textSize="@dimen/text_size_26sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_rg_verify_user" />
+
+    <LinearLayout
+        android:id="@+id/other_ll_first_verify_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_tv_first_verify_setting">
+
+        <RadioGroup
+            android:id="@+id/other_rg_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/other_rb_first_finger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="指纹"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_first_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="人脸"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_first_iris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="虹膜"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_first_finger_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="指纹+人脸"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_first_finger_iris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="指纹+虹膜"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_first_face_iris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="人脸+虹膜"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/other_cb_first_alcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_alcohol"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/other_btn_save_first_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:text="@string/txt_save" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/other_tv_second_verify_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="第二人验证设置"
+        android:textSize="@dimen/text_size_26sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_ll_first_verify_setting" />
+
+    <LinearLayout
+        android:id="@+id/other_ll_second_verify_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_tv_second_verify_setting">
+
+        <RadioGroup
+            android:id="@+id/other_rg_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/other_rb_second_finger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="指纹"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_second_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="人脸"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_second_iris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="虹膜"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_second_finger_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="指纹+人脸"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_second_finger_iris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="指纹+虹膜"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_second_face_iris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="人脸+虹膜"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/other_cb_second_alcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_alcohol"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/other_btn_save_second_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:text="@string/txt_save" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/other_tv_third_verify_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="第三人验证设置"
+        android:textSize="@dimen/text_size_26sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_ll_second_verify_setting" />
+
+    <LinearLayout
+        android:id="@+id/other_ll_third_verify_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_tv_third_verify_setting">
+
+        <RadioGroup
+            android:id="@+id/other_rg_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/other_rb_third_finger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="指纹"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_third_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="人脸"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_third_iris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="虹膜"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_third_finger_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="指纹+人脸"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_third_finger_iris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="指纹+虹膜"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/other_rb_third_face_iris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/select_cb_blue03"
+                android:text="人脸+虹膜"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/other_cb_third_alcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_alcohol"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/other_btn_save_three_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:text="@string/txt_save" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/other_cb_switch_systembar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:button="@drawable/select_cb_btn"
+        android:text="设置系统导航栏"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_ll_third_verify_setting" />
+
+</android.support.constraint.ConstraintLayout>

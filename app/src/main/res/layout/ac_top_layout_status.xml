@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dimen_5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ac_top_date_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_toLeftOf="@id/ac_top_date_txt"
+            android:background="@drawable/ac_top_date" />
+
+        <TextView
+            android:id="@+id/ac_top_date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_toLeftOf="@id/ac_top_net_txt"
+            android:text="2019-01-01 00:00:00" />
+
+        <TextView
+            android:id="@+id/ac_top_net_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_toLeftOf="@id/ac_top_power_txt"
+            android:drawableLeft="@drawable/ethernet_connect"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:text="@string/net_status_disconnect" />
+
+        <TextView
+            android:id="@+id/ac_top_power_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:drawableLeft="@drawable/ac_top_power"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:text="@string/power_status_normal" />
+
+        <TextView
+            android:id="@+id/ac_top_temper_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:drawableLeft="@drawable/icon_status_temperature"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:text="23℃" />
+
+        <TextView
+            android:id="@+id/ac_top_humidity_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_status_humidity"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:text="60%" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ac_top_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:background="@drawable/selector_back" />
+
+</RelativeLayout>

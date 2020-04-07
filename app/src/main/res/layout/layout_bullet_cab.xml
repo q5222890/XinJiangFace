@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ammo_rl_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/bg_dy01"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="264dp"
+        app:layout_constraintRight_toLeftOf="@+id/ammo_rl_02"
+        app:layout_constraintBottom_toTopOf="@+id/ammo_rl_03"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <ImageView
+            android:id="@+id/ammo_iv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:src="@drawable/bullet_normal" />
+
+        <TextView
+            android:id="@+id/ammo_tv_name_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_toRightOf="@+id/ammo_iv_01"
+            android:text="手枪子弹"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/ammo_tv_num_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ammo_iv_01"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_toRightOf="@+id/ammo_iv_01"
+            android:text="0发"
+            android:textSize="@dimen/text_size_14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ammo_rl_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/bg_dy02"
+        tools:layout_editor_absoluteX="564dp"
+        tools:layout_editor_absoluteY="264dp"
+        app:layout_constraintLeft_toRightOf="@+id/ammo_rl_01"
+        app:layout_constraintBottom_toTopOf="@+id/ammo_rl_04"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <ImageView
+            android:id="@+id/ammo_iv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:src="@drawable/bullet_normal" />
+
+        <TextView
+            android:id="@+id/ammo_tv_name_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_toRightOf="@+id/ammo_iv_02"
+            android:text="手枪子弹"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/ammo_tv_num_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ammo_iv_02"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_toRightOf="@+id/ammo_iv_02"
+            android:text="0发"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ammo_rl_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/bg_dy03"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="418dp"
+        app:layout_constraintRight_toLeftOf="@+id/ammo_rl_04"
+        app:layout_constraintTop_toBottomOf="@+id/ammo_rl_01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <ImageView
+            android:id="@+id/ammo_iv_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:src="@drawable/bullet_normal" />
+
+        <TextView
+            android:id="@+id/ammo_tv_name_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_toRightOf="@+id/ammo_iv_03"
+            android:text="长枪子弹"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/ammo_tv_num_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ammo_iv_03"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_toRightOf="@+id/ammo_iv_03"
+            android:text="0发"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ammo_rl_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/bg_dy04"
+        tools:layout_editor_absoluteX="564dp"
+        tools:layout_editor_absoluteY="418dp"
+        app:layout_constraintLeft_toRightOf="@+id/ammo_rl_03"
+        app:layout_constraintTop_toBottomOf="@+id/ammo_rl_02"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <ImageView
+            android:id="@+id/ammo_iv_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:src="@drawable/bullet_normal" />
+
+        <TextView
+            android:id="@+id/ammo_tv_name_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_toRightOf="@+id/ammo_iv_04"
+            android:text="长枪子弹"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/ammo_tv_num_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ammo_iv_04"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_toRightOf="@+id/ammo_iv_04"
+            android:text="0发"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

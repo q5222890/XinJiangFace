@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024dp"
+    android:layout_height="600dp">
+
+    <ImageView
+        android:id="@+id/dl_iris_iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/close_dialog"
+        android:layout_above="@+id/dl_iris_iv_status"
+        android:layout_toRightOf="@+id/dl_iris_iv_status"
+        />
+
+    <ImageView
+        android:id="@+id/dl_iris_iv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_iris_manage"/>
+
+    <TextView
+        android:id="@+id/dl_iris_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dl_iris_iv_status"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="点击图标注册/删除虹膜"/>
+
+</RelativeLayout>

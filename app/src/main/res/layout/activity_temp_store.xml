@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top_layout_status" />
+
+    <include
+        layout="@layout/ac_top_layout_func"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/temp_store_ll_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/temp_btn_in_gun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_15dp"
+            android:text="临时存放枪支"
+            android:textSize="@dimen/text_size_30sp" />
+
+        <TextView
+            android:id="@+id/temp_btn_get_gun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_15dp"
+            android:text="存放枪支领取"
+            android:textSize="@dimen/text_size_30sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/temp_store_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.CaptureFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/capture_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_page"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimen_5dp"
+        >
+        <Button
+            android:id="@+id/btn_pre_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一页"
+            />
+
+        <TextView
+            android:id="@+id/tv_cur_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_24sp"
+            android:text="1/3"/>
+
+        <Button
+            android:id="@+id/btn_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一页"
+            />
+
+        <Button
+            android:id="@+id/btn_delete_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除所有照片"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

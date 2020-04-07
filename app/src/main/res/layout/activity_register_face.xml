@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterFaceActivity">
+
+    <TextureView
+        android:id="@+id/single_camera_texture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/face_register_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="注册人脸"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:textSize="@dimen/text_size_26sp"
+        />
+
+    <Button
+        android:id="@+id/face_register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:textSize="@dimen/text_size_26sp"
+        />
+
+    <Button
+        android:id="@+id/face_register_btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:layout_gravity="right|center"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:textSize="@dimen/text_size_26sp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/face_register_btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:layout_gravity="top|right"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:textSize="@dimen/text_size_26sp"
+        />
+
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_60dp"
+    android:gravity="center_vertical"
+    android:id="@+id/task_item_root"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/task_item_tv_object_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/task_item_tv_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/task_item_tv_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/task_item_tv_task_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/task_item_tv_object_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:ems="3"
+            android:maxLines="1"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_edt_bg"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/task_item_rl_back_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/task_item_edt_back_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxLength="5"
+            android:gravity="center"
+            android:ems="3"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_edt_bg"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+        <CheckBox
+            android:id="@+id/task_item_cb_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

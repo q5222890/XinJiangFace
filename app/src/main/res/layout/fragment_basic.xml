@@ -1,0 +1,330 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/basic_tv_tittle_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/cyan"
+        android:text="服务器IP配置"
+        android:textSize="@dimen/dimen_30dp" />
+
+    <RelativeLayout
+        android:id="@+id/basic_rl_server_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/basic_tv_tittle_server"
+        >
+
+        <TextView
+            android:id="@+id/basic_tv_server_ip"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="服务器ip："
+            android:textSize="@dimen/text_size_26sp" />
+
+        <EditText
+            android:id="@+id/basic_et_server_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_toRightOf="@+id/basic_tv_server_ip"
+            android:background="@drawable/edt_bg"
+            android:ems="10"
+            android:maxLines="1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/basic_tv_server_port"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/basic_et_server_ip"
+            android:text="端口："
+            android:textSize="@dimen/text_size_26sp" />
+
+        <EditText
+            android:id="@+id/basic_et_server_port"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_toRightOf="@+id/basic_tv_server_port"
+            android:background="@drawable/edt_bg"
+            android:ems="10"
+            android:maxLines="1"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bt_set_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/basic_et_server_port"
+            android:text="保存"
+            android:textSize="@dimen/text_size_18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/basic_tv_set_local_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="本机IP配置"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/dimen_30dp"
+        android:layout_below="@+id/basic_rl_server_set"/>
+
+    <LinearLayout
+        android:id="@+id/basic_ll_local_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/basic_tv_set_local_ip">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="IP地址："
+            android:textSize="@dimen/text_size_26sp" />
+
+        <EditText
+            android:id="@+id/basic_edt_static_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/edt_bg"
+            android:digits="0123456789."
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="IP地址"
+            android:inputType="number"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#333333"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:text="网关："
+            android:textSize="@dimen/text_size_26sp" />
+
+        <EditText
+            android:id="@+id/basic_edt_static_gateway"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/edt_bg"
+            android:digits="1234567890."
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="网关"
+            android:inputType="number"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#333333"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/basic_ll_local_set02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/basic_ll_local_set"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="子网掩码："
+            android:textSize="@dimen/text_size_26sp" />
+
+        <EditText
+            android:id="@+id/basic_edt_static_netmask"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/edt_bg"
+            android:digits="1234567890."
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="子网掩码"
+            android:inputType="number"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#333333"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:text="DNS："
+            android:textSize="@dimen/text_size_26sp" />
+
+        <EditText
+            android:id="@+id/basic_edt_static_dns"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/edt_bg"
+            android:digits="0123456789."
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="DNS"
+            android:inputType="number"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#333333"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/basic_ll_local_set03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/basic_ll_local_set02"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="DNS2："
+            android:textSize="@dimen/text_size_26sp" />
+
+        <EditText
+            android:id="@+id/basic_edt_static_dns2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/edt_bg"
+            android:digits="0123456789."
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="DNS2"
+            android:inputType="number"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#333333"
+            />
+
+        <Button
+            android:id="@+id/basic_btn_save_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:textSize="@dimen/text_size_18sp"
+            android:text="保存" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/basic_tv_set_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期时间设置"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/dimen_30dp"
+        android:layout_below="@+id/basic_ll_local_set03"/>
+
+    <LinearLayout
+        android:id="@+id/basic_ll_set_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/basic_tv_set_date">
+
+        <EditText
+            android:id="@+id/basic_edt_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/edt_bg"
+            android:ems="10"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:hint="选择日期和时间"
+            android:editable="false"
+            />
+
+        <Button
+            android:id="@+id/basic_btn_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="@dimen/text_size_18sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/basic_tv_set_platform_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置平台服务器地址"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/dimen_30dp"
+        android:visibility="gone"
+        android:layout_below="@+id/basic_ll_set_date_time"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/basic_tv_set_platform_ip">
+
+        <EditText
+            android:id="@+id/basic_edt_server"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/edt_bg"
+            android:ems="20"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:hint="输入服务器地址"
+            android:editable="false"
+            android:singleLine="true"
+            />
+
+        <Button
+            android:id="@+id/basic_btn_save_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="@dimen/text_size_18sp"
+            />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/basic_rb_fingerprint_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/basic_ll_set_date_time"
+        android:layout_margin="@dimen/dimen_10dp">
+        <RadioButton
+            android:id="@+id/basic_rb_optical"
+            style="@style/customCheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:textColor="@color/white"
+            android:text="光学指纹"
+            android:textSize="@dimen/text_size_26sp"/>
+
+        <RadioButton
+            android:id="@+id/basic_rb_capacitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customCheckBoxStyle"
+            android:padding="@dimen/dimen_10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_26sp"
+            android:text="电容指纹"/>
+    </RadioGroup>
+</RelativeLayout>

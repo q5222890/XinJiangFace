@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BackListActivity">
+
+    <LinearLayout
+        android:id="@+id/back_ll_task_item_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="#003d43"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="类型"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <TextView
+            android:id="@+id/back_list_tv_gun_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="枪支编号"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="位置"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="领取数量"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <TextView
+            android:id="@+id/back_list_tv_back_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="归还数量"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16sp"
+            android:text="警员" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16sp"
+            android:text="警号" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="操作"
+            android:textSize="@dimen/text_size_16sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/back_rl_bottom_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/back_ll_task_item_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/back_gun_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/back_gun_ll_nav"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:id="@+id/back_tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_26sp"
+            android:textColor="@color/cyan"
+            />
+
+        <LinearLayout
+            android:id="@+id/back_gun_ll_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/back_btn_pre_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上一页"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                />
+
+            <TextView
+                android:id="@+id/back_tv_cur_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:text="1/1" />
+
+            <Button
+                android:id="@+id/back_btn_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:text="下一页" />
+
+            <Button
+                android:id="@+id/back_btn_open_cab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打开枪柜"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/back_btn_open_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打开枪锁"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/back_btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:text="确认" />
+
+            <Button
+                android:id="@+id/back_btn_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/back_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:text="返回"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

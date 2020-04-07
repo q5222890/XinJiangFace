@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_30dp">
+
+    <LinearLayout
+        android:id="@+id/dl_temp_ll_gun_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:text="枪支编号"
+            android:textSize="@dimen/text_size_22sp" />
+
+        <EditText
+            android:id="@+id/dl_edt_gun_no"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:background="@drawable/edt_bg"
+            android:ems="8"
+            android:hint="请输入枪支编号"
+            android:textColor="@color/black"
+            android:maxLength="15"
+            android:textSize="@dimen/text_size_22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dl_temp_ll_gun_eno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dl_temp_ll_gun_type">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:text="存放警员"
+            android:textSize="@dimen/text_size_22sp" />
+
+        <EditText
+            android:id="@+id/dl_edt_gun_eno"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:background="@drawable/edt_bg"
+            android:ems="8"
+            android:hint="输入警员姓名"
+            android:textColor="@color/black"
+            android:maxLength="15"
+            android:textSize="@dimen/text_size_22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dl_temp_ll_gun_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dl_temp_ll_gun_no">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:text="枪支类型"
+            android:textSize="@dimen/text_size_22sp" />
+
+        <EditText
+            android:id="@+id/dl_edt_gun_type"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:background="@drawable/edt_bg"
+            android:ems="8"
+            android:hint="输入枪支类型"
+            android:textColor="@color/black"
+            android:maxLength="15"
+            android:textSize="@dimen/text_size_22sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dl_temp_ll_police_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dl_temp_ll_gun_eno">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:text="警员编号"
+            android:textSize="@dimen/text_size_22sp" />
+
+        <EditText
+            android:id="@+id/dl_edt_police_no"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:background="@drawable/edt_bg"
+            android:ems="8"
+            android:hint="输入警员编号"
+            android:textColor="@color/black"
+            android:maxLength="12"
+            android:textSize="@dimen/text_size_22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dl_temp_ll_id_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dl_temp_ll_police_no">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:text="身份证号"
+            android:textSize="@dimen/text_size_22sp" />
+
+        <EditText
+            android:id="@+id/dl_edt_id_number"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:background="@drawable/edt_bg"
+            android:ems="8"
+            android:hint="输入警员身份证号"
+            android:textColor="@color/black"
+            android:maxLength="18"
+            android:digits="1234567890Xx"
+            android:textSize="@dimen/text_size_22sp" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dl_temp_ll_id_number">
+
+        <Button
+            android:id="@+id/dl_temp_btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/dl_temp_btn_open_cab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开枪柜"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dl_temp_btn_open_lock"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/dl_temp_btn_open_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开枪锁"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@+id/dl_temp_btn_open_cab"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dl_temp_btn_cancel"/>
+
+        <Button
+            android:id="@+id/dl_temp_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

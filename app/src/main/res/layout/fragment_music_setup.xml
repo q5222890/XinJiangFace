@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_10dp">
+
+        <Button
+            android:id="@+id/btn_volume_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音量+"
+            android:layout_margin="@dimen/dimen_5dp"
+            />
+
+        <Button
+            android:id="@+id/btn_volume_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音量-"
+            android:layout_margin="@dimen/dimen_5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/music_et_switch_code"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:background="@drawable/edt_bg"
+                android:ems="5"
+                android:inputType="number"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_open_alarm"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="打开报警器"
+                android:layout_margin="@dimen/dimen_10dp"/>
+
+            <Button
+                android:id="@+id/btn_close_alarm"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="关闭报警器"
+                android:layout_margin="@dimen/dimen_10dp"/>
+
+            <Button
+                android:id="@+id/btn_open_alcohol"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="打开酒精检测仪"
+                android:visibility="gone"
+                android:layout_margin="@dimen/dimen_10dp"/>
+
+            <Button
+                android:id="@+id/btn_open_door_lock"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="打开枪柜门锁"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_read_humiture_value"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="读取温湿度值"
+                android:layout_margin="@dimen/dimen_10dp"/>
+
+            <Button
+                android:id="@+id/btn_read_alcohol_value"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="读取酒精浓度值"
+                android:layout_margin="@dimen/dimen_10dp"/>
+
+            <Button
+                android:id="@+id/btn_read_ups_status"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="读取备用电源状态"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_switch_power"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="通电"
+                android:layout_margin="@dimen/dimen_10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_receive_msg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:editable="false"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <Button
+                android:id="@+id/btn_clear_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除接收数据" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

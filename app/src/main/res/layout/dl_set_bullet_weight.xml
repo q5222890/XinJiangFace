@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/dl_tv_address_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置子弹数量"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:textSize="@dimen/text_size_28sp"
+        />
+
+    <Button
+        android:id="@+id/dl_btn_clear_bullet_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始设置"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dl_tv_address_tv_msg"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:textSize="@dimen/text_size_26sp"
+        android:background="@drawable/btn_bg_04"
+        />
+
+    <EditText
+        android:id="@+id/dl_edt_bullet_num"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:ems="5"
+        android:background="@android:drawable/edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/dl_tv_address_tv_msg"
+        app:layout_constraintRight_toLeftOf="@+id/dl_btn_clear_bullet_weight"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:visibility="gone"
+        android:hint="子弹数量"/>
+
+
+</android.support.constraint.ConstraintLayout>

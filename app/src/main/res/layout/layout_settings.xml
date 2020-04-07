@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_top_status"
+        layout="@layout/ac_top_layout_status" />
+
+    <include
+        layout="@layout/ac_top_layout_func"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include_top_status"
+        tools:layout_editor_absoluteY="5dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/setting_left_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/translucent_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/settings_iv_basic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基本"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/settings_iv_debug"
+                android:background="@drawable/select_basic_setting"
+                />
+
+            <ImageView
+                android:id="@+id/settings_iv_debug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_debug_setting"
+                app:layout_constraintTop_toBottomOf="@+id/settings_iv_basic"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/settings_iv_lock"/>
+
+            <ImageView
+                android:id="@+id/settings_iv_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_lock_setting"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings_iv_debug"
+                app:layout_constraintBottom_toTopOf="@+id/settings_iv_other"/>
+
+            <ImageView
+                android:id="@+id/settings_iv_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:background="@drawable/select_other_setting"
+                app:layout_constraintBottom_toTopOf="@+id/settings_iv_about"
+                app:layout_constraintTop_toBottomOf="@+id/settings_iv_lock" />
+
+            <ImageView
+                android:id="@+id/settings_iv_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_about_setting"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings_iv_other"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/setting_left_tabs">
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

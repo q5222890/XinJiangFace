@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string-array name="baud_rate">-->
+        <!--<item>50</item>-->
+        <!--<item>75</item>-->
+        <!--<item>110</item>-->
+        <!--<item>300</item>-->
+        <!--<item>600</item>-->
+        <!--<item>1200</item>-->
+        <!--<item>2400</item>-->
+        <!--<item>4800</item>-->
+        <!--<item>9600</item>-->
+        <!--<item>14400</item>-->
+        <!--<item>19200</item>-->
+        <!--<item>38400</item>-->
+        <!--<item>57400</item>-->
+        <!--<item>115200</item>-->
+        <!--<item>230400</item>-->
+        <!--<item>460800</item>-->
+        <!--<item>921600</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="baud_rate">-->
+        <!--<item>115200</item>-->
+        <!--<item>57400</item>-->
+        <!--<item>38400</item>-->
+        <!--<item>19200</item>-->
+        <!--<item>14400</item>-->
+        <!--<item>9600</item>-->
+    <!--</string-array>-->
+    <!--波特率-->
+    <string-array name="baud_rate">
+        <item>2400</item>
+        <item>9600</item>
+        <item>14400</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57400</item>
+        <item>115200</item>
+    </string-array>
+    <!--出警任务类型-->
+    <string-array name="police_go_type">
+        <item>训练出警</item>
+        <item>押解</item>
+        <item>执行</item>
+        <item>应急执行</item>
+    </string-array>
+
+    <string-array name="police_go_type_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>99</item>
+    </string-array>
+    <!--枪支类型-->
+    <string-array name="gun_type_value">
+        <item>64式手枪</item>
+        <item>77式手枪</item>
+        <item>92式手枪</item>
+        <item>转轮手枪</item>
+        <item>38mm防暴枪</item>
+        <item>97_1式防暴枪</item>
+        <item>56式步枪</item>
+        <item>85狙击步枪</item>
+        <item>95式自动步枪</item>
+        <item>88式狙击步枪</item>
+        <item>56式冲锋枪</item>
+        <item>79式微冲</item>
+        <item>95式班用机枪</item>
+        <item>18.4mm防暴枪</item>
+    </string-array>
+    <!--枪支类型ID-->
+    <string-array name="gun_type_key">
+        <item>1003</item>
+        <item>1004</item>
+        <item>1005</item>
+        <item>1006</item>
+        <item>1007</item>
+        <item>1008</item>
+        <item>1009</item>
+        <item>1010</item>
+        <item>1011</item>
+        <item>1012</item>
+        <item>1013</item>
+        <item>1014</item>
+        <item>1015</item>
+        <item>1016</item>
+    </string-array>
+    <!--子弹类型ID-->
+    <string-array name="bullet_type_id">
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+    </string-array>
+    <!--弹夹类型ID-->
+    <string-array name="clip_type_id">
+        <item>3001</item>
+        <item>3002</item>
+        <item>3003</item>
+        <item>3004</item>
+        <item>3005</item>
+        <item>3006</item>
+        <item>3007</item>
+        <item>3008</item>
+        <item>3009</item>
+        <item>3010</item>
+        <item>3011</item>
+        <item>3012</item>
+        <item>3013</item>
+        <item>3014</item>
+        <item>3015</item>
+    </string-array>
+
+    <string-array name="bullet_num">
+        <item>2</item>
+        <item>4</item>
+        <item>10</item>
+    </string-array>
+
+</resources>

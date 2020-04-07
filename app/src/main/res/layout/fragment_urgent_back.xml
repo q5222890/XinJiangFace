@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/urgent_back_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#01FFFF"
+        app:tabIndicatorHeight="5dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:visibility="visible"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo.Large"
+        app:tabSelectedTextColor="#01FFFF"
+        app:tabTextColor="@color/white"
+        app:tabRippleColor="@color/white">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="归还枪支"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="归还弹药"/>
+
+    </android.support.design.widget.TabLayout>
+
+    <com.zack.xjht.ui.widget.NoSrcollViewPage
+        android:id="@+id/urgent_back_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+    </com.zack.xjht.ui.widget.NoSrcollViewPage>
+
+</LinearLayout>

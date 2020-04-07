@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:id="@+id/operate_info_item_root"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_10dp">
+
+    <TextView
+        android:id="@+id/operate_info_item_tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:text="ID"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <TextView
+        android:id="@+id/operate_info_item_tv_first_name"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="领枪人1"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <TextView
+        android:id="@+id/operate_info_item_tv_second_name"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="领枪人2"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <TextView
+        android:id="@+id/operate_info_item_tv_police_name"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="用枪人"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <TextView
+        android:id="@+id/operate_info_item_tv_status"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="状态"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <TextView
+        android:id="@+id/operate_info_item_tv_type_name"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="类型"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <TextView
+        android:id="@+id/operate_info_item_tv_gun_no"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:text="枪支编号"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <TextView
+        android:id="@+id/operate_info_item_tv_bullet_num"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="数量"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <TextView
+        android:id="@+id/operate_info_item_tv_datetime"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="时间"
+        android:textSize="@dimen/text_size_16sp" />
+</LinearLayout>

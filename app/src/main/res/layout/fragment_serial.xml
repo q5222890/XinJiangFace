@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/compat_spinner_serial_device"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/compat_spinner_serial_baudrate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/btn_spinner_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/edt_serial_receive"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:editable="false"
+        android:gravity="start"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12sp" />
+
+    <EditText
+        android:id="@+id/edt_serial_emission"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14sp"
+        android:gravity="start"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/serial_rb_txt_send"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="字符" />-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/serial_rb_hex_send"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="十六进制" />-->
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/serial_rb_txt_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="字符"/>
+
+            <RadioButton
+                android:id="@+id/serial_rb_hex_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="十六进制"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_receive_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除接收区"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_send_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除发送区"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/send_sleep_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="间隔时间"
+            android:inputType="number"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_serial_auto_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="自动发送" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_auto_send"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="自动发送"-->
+            <!--/>-->
+
+        <Button
+            android:id="@+id/serial_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="发送"/>
+
+    </LinearLayout>
+
+</LinearLayout>

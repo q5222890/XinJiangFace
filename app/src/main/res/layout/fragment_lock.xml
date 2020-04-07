@@ -1,0 +1,331 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/lock_ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/lock_edt_lock_no"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/shape_edt_bg"
+            android:ems="5"
+            android:hint="输入锁地址"
+            android:inputType="number"
+            android:maxLines="1"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_query_lock_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询枪锁状态"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_set_lock_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置锁地址"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_open_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开锁"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_close_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关锁"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_open_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开LED"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_close_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭LED"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_open_cab_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开枪柜"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_open_all_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开所有枪锁"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_above="@+id/lock_ll_cab_lock"
+        >
+
+        <EditText
+            android:id="@+id/lock_edt_power_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:background="@drawable/shape_edt_bg"
+            android:ems="5"
+            android:hint="电源地址"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_set_power_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lock_ll_cab_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <EditText
+            android:id="@+id/et_left_cab_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:background="@drawable/shape_edt_bg"
+            android:ems="5"
+            android:hint="左柜门地址"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_right_cab_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:background="@drawable/shape_edt_bg"
+            android:ems="5"
+            android:hint="右柜门地址"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_set_cab_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lock_ll_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lock_ll_left"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_50dp"
+        >
+        <Button
+            android:id="@+id/btn_set_tare"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="设置皮重"
+            android:visibility="gone"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_set_bullet_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置子弹数量"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_read_bullet_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取子弹个数"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_read_bullet_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取子弹重量"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_auto_set_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动设置地址"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <Button
+            android:id="@+id/btn_open_lock2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="连续开锁"
+            android:layout_margin="@dimen/dimen_3dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/lock_edt_bullet_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_48dp"
+                android:background="@drawable/shape_edt_bg"
+                android:ems="6"
+                android:hint="输入子弹重量"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/btn_change_ad"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="AD转换"
+                android:layout_margin="@dimen/dimen_3dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_adjustment_direction_plus"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="微调单重+"
+                android:layout_margin="@dimen/dimen_3dp"/>
+
+            <Button
+                android:id="@+id/btn_adjustment_direction_minus"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="微调单重-"
+                android:layout_margin="@dimen/dimen_3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_adjustment_tare_plus"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="微调皮重+"
+                android:layout_margin="@dimen/dimen_3dp"/>
+
+            <Button
+                android:id="@+id/btn_adjustment_tare_minus"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="微调皮重-"
+                android:layout_margin="@dimen/dimen_3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_adjustment_ad_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微调AD转换+"
+                android:layout_margin="@dimen/dimen_3dp"/>
+
+            <Button
+                android:id="@+id/btn_adjustment_ad_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微调AD转换-"
+                android:layout_margin="@dimen/dimen_3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_open_door"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开柜门"
+                android:layout_margin="@dimen/dimen_3dp"/>
+
+            <Button
+                android:id="@+id/btn_close_door"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关柜门"
+                android:layout_margin="@dimen/dimen_3dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_invisible_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示调试按钮"
+            android:layout_margin="@dimen/dimen_3dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_50dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/lock_ll_middle"
+        >
+
+        <EditText
+            android:id="@+id/edt_lock_receive_msg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:editable="false"
+            android:textColor="@color/white"
+            android:gravity="start"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <Button
+            android:id="@+id/lock_btn_clear_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除接收数据" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.VerifyPwdFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_40dp"
+        android:text="用户名密码登入"
+        android:textColor="#00d9e6"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/verify_pwd_tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入用户名和密码登录"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/ll_user_name"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/open_line_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_40dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="用户名：" />
+
+        <EditText
+            android:id="@+id/edt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edt_bg"
+            android:ems="10"
+            android:hint="输入用户名"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/open_line_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="密码：" />
+
+        <EditText
+            android:id="@+id/edt_user_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edt_bg"
+            android:ems="10"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/open_ll_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open_line_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/open_btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:text="登入" />
+
+        <Button
+            android:id="@+id/open_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:text="取消" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/instore_task_list_tv_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="入库任务清单"
+        android:textSize="@dimen/text_size_26sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/instore_task_list_ll_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instore_task_list_tv_tittle">
+
+        <TextView
+            android:id="@+id/instore_task_list_tv_subcab_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="位置编号" />
+
+        <TextView
+            android:id="@+id/instore_task_list_tv_subcab_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="位置类型"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/instore_task_list_tv_gun_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="枪弹类型"
+            />
+
+        <TextView
+            android:id="@+id/instore_task_list_tv_gun_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="枪支编号"
+            />
+
+        <TextView
+            android:id="@+id/instore_task_list_tv_ammo_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="数量" />
+
+        <TextView
+            android:id="@+id/instore_task_list_tv_operate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="操作" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/instore_task_rv_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instore_task_list_ll_title">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/instore_task_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/text_size_26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/in_store_btn_pre_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="上一页" />
+
+        <TextView
+            android:id="@+id/in_store_tv_cur_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/in_store_btn_pre_page"
+            android:text="1/1" />
+
+        <Button
+            android:id="@+id/in_store_btn_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/in_store_tv_cur_page"
+            android:text="下一页" />
+
+        <Button
+            android:id="@+id/store_in_btn_open_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/in_store_btn_next_page"
+            android:text="打开柜门"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/store_in_btn_open_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/store_in_btn_open_door"
+            android:text="打开枪锁"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/store_in_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/store_in_btn_open_lock"
+            android:text="确认入库"
+            />
+
+        <Button
+            android:id="@+id/store_in_btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/store_in_btn_ok"
+            android:visibility="gone"
+            android:text="完成" />
+
+        <Button
+            android:id="@+id/store_in_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/store_in_btn_ok"
+            android:text="返回" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

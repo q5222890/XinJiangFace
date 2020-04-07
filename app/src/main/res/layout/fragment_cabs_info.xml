@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:textSize="@dimen/text_size_22sp"
+            android:text="枪弹柜信息"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/translucent_bg">
+            <TextView
+                android:id="@+id/cab_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="枪柜类型："
+                />
+
+            <TextView
+                android:id="@+id/cab_info_tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/translucent_bg">
+
+            <TextView
+                android:id="@+id/cab_no_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="枪柜编号："
+                />
+
+            <TextView
+                android:id="@+id/cab_info_tv_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gun_info_tv_gun_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="枪支数量统计"
+            android:textSize="@dimen/text_size_22sp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:visibility="visible"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:id="@+id/gun_info_tv_gun_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_22sp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:visibility="visible"
+            android:background="@drawable/translucent_bg"
+            />
+
+        <TextView
+            android:id="@+id/gun_info_tv_ammo_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="弹药数量统计"
+            android:textSize="@dimen/text_size_22sp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:visibility="visible"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:id="@+id/gun_info_tv_ammo_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_18sp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:visibility="visible"
+            android:background="@drawable/translucent_bg"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cab_info_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_page"
+            />
+
+        <TextView
+            android:id="@+id/cab_info_tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_26sp"
+            android:textColor="@color/cyan"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimen_10dp"
+            >
+            <Button
+                android:id="@+id/cab_btn_pre_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上一页"
+                android:gravity="center"
+                android:layout_margin="@dimen/dimen_10dp"
+                />
+
+            <TextView
+                android:id="@+id/cab_tv_cur_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1/1"
+                android:layout_margin="@dimen/dimen_10dp"
+                />
+
+            <Button
+                android:id="@+id/cab_btn_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下一页"
+                android:gravity="center"
+                android:layout_margin="@dimen/dimen_10dp"
+                />
+
+            <Button
+                android:id="@+id/cab_info_open_cab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打开枪柜"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.TempInFragment">
+
+    <TextView
+        android:id="@+id/temp_in_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimen_30dp"
+        android:text="临时存放枪支"
+        android:textSize="@dimen/dimen_30dp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/temp_in_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/temp_in_ll_view"
+        android:layout_below="@+id/temp_in_tittle"
+        android:background="@color/colorPrimaryDark">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/temp_in_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/text_size_26sp" />
+
+    <LinearLayout
+        android:id="@+id/temp_in_ll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/temp_in_btn_pre_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="上一页"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/temp_in_tv_cur_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="1/1" />
+
+        <Button
+            android:id="@+id/temp_in_btn_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="下一页"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/temp_in_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="完成" />
+
+    </LinearLayout>
+</RelativeLayout>

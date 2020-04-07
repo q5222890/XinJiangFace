@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.UrgentBackAmmosFragment">
+
+    <RelativeLayout
+        android:id="@+id/urgent_back_rl_task_info"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/translucent_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/back_rv_task_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/back_tv_second_user_name"
+            android:layout_margin="@dimen/dimen_10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/urgent_back_ammos_ll_tittle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="#003d43"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toRightOf="@+id/urgent_back_rl_task_info"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="类型" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="位置" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="领取数量" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="归还数量" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="操作" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/urgent_back_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dimen_10dp"
+        app:layout_constraintLeft_toRightOf="@+id/urgent_back_rl_task_info"
+        app:layout_constraintTop_toBottomOf="@+id/urgent_back_ammos_ll_tittle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/urgent_back_bottom_view"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/urgent_back_ammo_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_26sp"
+        android:textColor="@color/cyan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/urgent_back_bottom_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/urgent_back_rl_task_info"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/urgent_back_btn_pre_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:text="上一页" />
+
+        <TextView
+            android:id="@+id/urgent_back_tv_cur_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:text="1/1" />
+
+        <Button
+            android:id="@+id/urgent_back_btn_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:text="下一页" />
+
+        <Button
+            android:id="@+id/urgent_back_btn_open_cab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开弹柜"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/urgent_back_btn_open_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开弹仓"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/urgent_back_btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:text="确认" />
+
+        <Button
+            android:id="@+id/urgent_back_btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:text="完成" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

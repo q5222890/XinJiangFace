@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/translucent_bg"
+    android:layout_margin="@dimen/dimen_3dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/task_item_apply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/task_item_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/task_item_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+</LinearLayout>

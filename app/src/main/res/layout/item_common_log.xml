@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_10dp"
+    android:gravity="center"
+    android:id="@+id/common_item_root"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/common_item_tv_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/common_item_tv_name"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/common_item_tv_time"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/common_item_tv_content"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+</LinearLayout>

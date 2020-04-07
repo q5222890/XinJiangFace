@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top_layout_status"/>
+
+    <include layout="@layout/ac_top_layout_func"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/keep_ll_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/keep_btn_get_gun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_30sp"
+            android:text="保养领取"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_15dp"
+            />
+
+        <TextView
+            android:id="@+id/keep_btn_back_gun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_30sp"
+            android:text="保养归还"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_15dp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/keep_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/content_bg</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:textViewStyle">@style/textViewStyle</item>
+        <item name="android:buttonStyle">@style/buttonStyle</item>
+        <item name="android:editTextStyle">@style/editTextStyle</item>
+        <item name="checkboxStyle">@style/customCheckBoxStyle</item>
+    </style>
+
+    <style name="textViewStyle">
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:background">@drawable/btn_bg_04</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">@dimen/dimen_10dp</item>
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/shape_edt_bg</item>
+    </style>
+
+    <style name="customCheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/select_cb_blue03</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        //Dialog的windowFrame框为无
+        <item name="android:windowFrame">@null</item>
+        //是否浮现在activity之上
+        <item name="android:windowIsFloating">true</item>
+        //是否透明
+        <item name="android:windowIsTranslucent">true</item>
+        //是否隐藏title
+        <item name="android:windowNoTitle">true</item>
+        //设置dialog的背景
+        <item name="android:background">@android:color/transparent</item>
+        //显示区域背景是否透明
+        <item name="android:windowBackground">@android:color/transparent</item>
+        //就是用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5
+        <item name="android:backgroundDimAmount">0.7</item>
+        //显示区域以外是否使用黑色半透明背景
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:buttonStyle">@style/buttonStyle</item>
+    </style>
+
+</resources>

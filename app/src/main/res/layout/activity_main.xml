@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <include
+        android:id="@+id/include_layout_status"
+        layout="@layout/ac_top_layout_status" />
+
+    <ImageView
+        android:id="@+id/main_top_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:src="@drawable/tittle"
+        android:textColor="#01FFFF"
+        app:layout_constraintLeft_toRightOf="@+id/main_iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/include_layout_status" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="【中国航天十二院】"
+        android:textSize="@dimen/text_size_24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/main_iv_logo"
+        app:layout_constraintRight_toRightOf="@+id/main_top_tittle"
+        app:layout_constraintTop_toBottomOf="@+id/main_top_tittle" />
+
+    <LinearLayout
+        android:id="@+id/main_ll_shield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/standby_img_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_police_shield" />
+
+        <TextView
+            android:id="@+id/main_calendar_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="2018-1-1 星期一"
+            android:textColor="#01FFFF"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/main_iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_48dp"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include_layout_status" />
+
+
+    <LinearLayout
+        android:id="@+id/main_ll_functional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_ll_shield">
+
+        <ImageView
+            android:id="@+id/main_btn_get_gun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:src="@drawable/get_gun" />
+
+        <ImageView
+            android:id="@+id/main_btn_back_gun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/main_btn_get_gun"
+            android:src="@drawable/back_gun" />
+
+        <ImageView
+            android:id="@+id/main_btn_urgency_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/main_btn_back_gun"
+            android:src="@drawable/emergency" />
+
+        <ImageView
+            android:id="@+id/main_btn_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/main_btn_urgency_open"
+            android:src="@drawable/other" />
+
+        <ImageView
+            android:id="@+id/main_btn_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/main_btn_other"
+            android:src="@drawable/settings" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

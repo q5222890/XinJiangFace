@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.TempGetFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_30dp"
+        android:gravity="center_horizontal"
+        android:text="临时存放领取"
+        android:textSize="@dimen/dimen_30dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/temp_get_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="#003d43"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="姓名" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="枪支类型" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="所在位置" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="枪支编号" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="操作" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/temp_get_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/temp_get_ll_bottom"
+        android:layout_below="@+id/temp_get_ll_top"
+        android:background="@color/colorPrimaryDark">
+        
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/temp_get_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/text_size_26sp" />
+
+    <LinearLayout
+        android:id="@+id/temp_get_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/temp_get_btn_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="上一页"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/temp_get_tv_curpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/1"
+            android:visibility="invisible"
+            android:layout_margin="@dimen/dimen_10dp"
+            />
+
+        <Button
+            android:id="@+id/temp_get_btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="下一页"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/temp_get_btn_open_cab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="打开枪柜"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/temp_get_btn_open_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="打开枪锁"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/temp_get_btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="确认领取" />
+
+        <Button
+            android:id="@+id/temp_get_btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="完成"
+            android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>

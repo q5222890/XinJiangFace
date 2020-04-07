@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_layout"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@drawable/translucent_bg"
+    android:layout_margin="@dimen/dimen_3dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_item_cab_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimen_3dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_item_gun_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_gun_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/dimen_3dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <TextView
+        android:id="@+id/tv_item_gun_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14sp"
+        android:layout_marginBottom="@dimen/dimen_3dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_item_gun_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/item_tv_gun_state"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/item_tv_gun_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/tv_item_lock_state"
+        android:layout_margin="@dimen/dimen_5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_lock_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dimen_3dp"
+        />
+
+</RelativeLayout>

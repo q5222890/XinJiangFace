@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.UserActivity">
+
+    <include
+        android:id="@+id/include_top_status"
+        layout="@layout/ac_top_layout_status"
+        />
+
+    <TextView
+        android:id="@+id/user_list_tv_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/include_top_status"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="10dp"
+        android:text="警员管理"
+        android:textSize="40sp"/>
+
+    <RelativeLayout
+        android:id="@+id/user_rl_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/user_list_tv_tittle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/user_rl_char"
+        app:layout_constraintBottom_toTopOf="@+id/user_ll_bottom"
+        >
+
+        <LinearLayout
+            android:id="@+id/user_ll_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="姓名"
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="警号"
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="部门"
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="选择"
+                android:textColor="@android:color/holo_blue_bright" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/user_rv_user_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/user_ll_tittle"
+            android:listSelector="@color/bg_blue">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_rl_char"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:background="@drawable/translucent_bg"
+        app:layout_constraintLeft_toRightOf="@+id/user_rl_list"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_list_tv_tittle"
+        app:layout_constraintBottom_toTopOf="@+id/user_ll_bottom"
+        >
+        <ImageView
+            android:id="@+id/user_btn_enroll_finger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/finger_enroll"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimen_10dp"
+            />
+
+        <Button
+            android:id="@+id/user_btn_enroll_vein"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_below="@+id/user_btn_enroll_finger"
+            android:layout_centerHorizontal="true"
+            android:text="指静脉"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/user_btn_enroll_iris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_below="@+id/user_btn_enroll_face"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size_26sp"
+            android:background="@drawable/iris_enroll"
+            />
+
+        <ImageView
+            android:id="@+id/user_btn_enroll_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_below="@+id/user_btn_enroll_finger"
+            android:background="@drawable/enroll_face"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/user_ll_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_rl_list"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <Button
+            android:id="@+id/user_btn_pre_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="上一页" />
+
+        <TextView
+            android:id="@+id/user_tv_cur_page"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="1/1" />
+
+        <Button
+            android:id="@+id/user_btn_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:text="下一页" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
